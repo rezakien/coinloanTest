@@ -1,0 +1,121 @@
+@import 'variables.scss';
+
+html {
+  font-family: $font-primary;
+  font-size: $font-size;
+  word-spacing: 1px;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.form-input {
+  border-color: #ccc;
+  border-style: solid;
+  border-width: 1px 0px 1px 1px;
+  border-radius: 5px 0 0 5px;
+  height: 40px;
+  font-size: 16px;
+  padding: 0 1rem;
+  outline: none;
+}
+
+button.exchange, button.success {
+  background-color: $button-color;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  margin: auto auto 0 auto;
+  padding: 1.2em 3em;
+  cursor: pointer;
+  box-shadow: 1px 1px 2px 1px #ccc;
+  transition: 0.1s ease-in;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:hover {
+    background-color: $button-hover-color;
+  }
+  &:active {
+    box-shadow: none;
+  }
+}
+
+.form-input-select {
+  font-size: 16px;
+  .vs__dropdown-toggle {
+    border-radius: 0 5px 5px 0;
+    height: 40px;
+    padding: 0;
+    border: none;
+    & > * {
+      background-color: $primary-color;
+      color: #fff;
+    }
+    .vs__selected-options {
+      width: 100px;
+      & > * {
+        color: #fff;
+      }
+    }
+    .vs__actions {
+      padding: 0 1em 0 0;
+      & > button svg {
+        fill: #fff;
+      }
+      & > svg {
+        fill: #fff;
+      }
+    }
+    .vs__search {
+      height: 30px;
+      font-size: 16px;
+    }
+  }
+  
+}
+
+.border-bottom {
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #ccc;
+}
+
+.inline-flex {
+  display: inline-flex;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.align-items-center {
+  display: flex;
+  align-items: center;
+}
+
+.justify-content-center {
+  display: flex;
+  justify-content: center;
+}
+
+.align-flex-end {
+  display: flex;
+  align-items: flex-end;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.bold__6 {
+  font-weight: 600;
+}
